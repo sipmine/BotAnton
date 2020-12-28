@@ -206,8 +206,6 @@ async def stats(ctx, nick):
         mmr_rank = parse()
         if mmr_rank[0] in mmr_rank:
             guilds = bot.guilds
-            NG = guilds[1]
-            print(NG)
             emb = discord.Embed(color=0xfab319)
             emb.set_author(name=nick, icon_url=mmr_rank[2])
             emb.add_field(name='```RANK```', value=f'```{mmr_rank[1]}```')
